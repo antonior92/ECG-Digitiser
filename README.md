@@ -105,6 +105,11 @@ Replace the name of the folder (probably `ptb-xl-a-large-publicly-available-elec
 Replace the name of the folder (probably `ptb-xl-a-comprehensive-electrocardiographic-feature-dataset-1.0.1`) that contains a folder called `labels` with `ptb-xl-p/`. 
 Replace the paths below with the actual paths to the folders.
 
+        wget -O ptb-xl.zip https://physionet.org/content/ptb-xl/get-zip/1.0.3/
+        wget -O ptb-xl-p.zip  https://physionet.org/content/ptb-xl-plus/get-zip/1.0.1/
+
+
+
 2. Add information from various spreadsheets from the PTB-XL dataset to the WFDB header files:
 
         python -m src.ptb_xl.prepare_ptbxl_data \
